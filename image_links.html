@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Assinment</title>
+</head>
+<style>
+    body {
+        display: flex;
+        font-family: Arial,  sans-serif;
+        margin: 20px;
+    }
+    h1, h2, h3{
+        color: brown;
+        background-color: chocolate;
+    }
+    img{
+        max-width: 100%
+        
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .gallery img{
+        display: grid;
+        border-radius: 7px;
+    }
+    .menu{
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <ul style="background-color: brown; margin: 0; overflow:auto; width: 30%; height: 90vh;">
+        <li><a href="#home" style="display: block; padding: 25px; text-decoration: none;" onclick="document.getElementById('home').style.display = 'block' ; document.getElementById('gallery').style.display = 'none'; document.getElementById('menu').style.display = 'none';">Home</a></li>
+        <li><a href="#gallery" style="display: block; padding: 25px; text-decoration: none;" onclick="document.getElementById('home').style.display = 'none' ; document.getElementById('gallery').style.display = 'block' ; document.getElementById('menu').style.display = 'none';">Gallery</a></li>
+        <li><a href="#menu" style="display: block; padding: 25px; text-decoration: none;" onclick="document.getElementById('home').style.display = 'none' ; document.getElementById('gallery').style.display = 'none' ; document.getElementById('menu').style.display = 'block';">Menu</a></li>
+    </ul>
+    <div class="content" style="flex-grow: 1; padding: 20px;">
+        <div id="home" style="display: none;">
+            <h2>HOME</h2>
+            <h3>Welcome to our home page</h3>
+            <p>Explore the cutting-edge world of technology here with us</p>
+            <li><a href="https://www.istockphoto.com/photo/energy-lecture-screen-gm1402667894-455488045?searchscope=image%2Cfilm"></a></li>
+            <img src="https://media.istockphoto.com/id/1402667894/photo/energy-lecture-screen.jpg?s=612x612&w=0&k=20&c=69CyBqRiHWPdYGn2ToXUIeMYVj76rnoA4MHFYEpZCOg="width="350px"height="350px" alt="Technology image">
+
+    </div>
+    <div id="gallery" style="flex-grow: 1; padding: 25px; display:grid;">
+        <h2>Gallery</h2>
+        <p>Join us in celebrating the magnificence of the natural world, where art becomes a powerful catalyst for environmental awareness and appreciation.</p>
+        <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fphotos%2Fnature&psig=AOvVaw24PaHsAxngjZZ9pVQpxrmM&ust=1710229177840000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOjBrq_a64QDFQAAAAAdAAAAABAE"></a></li>
+        <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"width="200px" height="200px" alt="Nature image 1">
+        <li><a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Fglacier-mountain-landscape-with-flowers-lake-beautiful-sunset-with-full-moon_713888-1322.jpg&tbnid=uk5YVIVijOjqkM&vet=10CAYQxiAoBGoXChMI6MGur9rrhAMVAAAAAB0AAAAAEAc..i&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Fphotos%2Fnature-wallpaper&docid=gMCwGYWpbCPYUM&w=626&h=358&itg=1&q=images%20about%20nature&ved=0CAYQxiAoBGoXChMI6MGur9rrhAMVAAAAAB0AAAAAEAc"></a></li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY1Wlh1Exq8PJgFqu_mj9XgYKdznvauS82R0sxZzcoXkIW2N69oyv2gCbAq47XrdRSUkE&usqp=CAU"width="200px" height="200px" alt="nature image 2">
+        <li><a href="https://www.freepik.com/free-photo/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower_9183672.htm#query=nature&position=7&from_view=keyword&track=sph&uuid=45d4f3ad-3f50-427c-8cb3-854d087a2372"></a></li>
+        <img src="https://img.freepik.com/free-photo/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower_181624-7640.jpg?size=626&ext=jpg&ga=GA1.1.1127223327.1709901599&semt=sph" width="200px" height="200px" alt="Nature image 3">
+
+     </div>
+     <div id="menu" style="flex-grow: 1; padding: 25p;">
+        <h2>Menu</h2>
+        <p>Peruse our digital menu</p>
+        <p>where each dish is a masterpiece thoughtfully curated to satsfy your palate and awaken a sense of gastronomic delight</p>
+        <ul>
+        <li><a href="https://img.freepik.com/free-photo/baked-chicken-wings-asian-style_2829-10158.jpg?size=626&ext=jpg">Spicy chicken</a></li>
+        <li><a href="https://img.freepik.com/free-photo/delicious-burger-with-many-ingredients-isolated-white-background-tasty-cheeseburger-splash-sauce_90220-1266.jpg?w=360&t=st=1710146814~exp=1710147414~hmac=29a80655a5209ab040457d382d517abf3e4f6504cfb1508a7a715cd5a564d865">Food burger</a></li>
+        <li><a href="https://img.freepik.com/premium-photo/fish-cordon-bleu-with-tomato-sauce-basil-white-plate_921026-11072.jpg?size=626&ext=jpg&ga=GA1.1.1590212890.1710145933&semt=sph">Gourment food</a></li>
+        </ul>
+     
+
+    </div>
+    </body>
+</html>
